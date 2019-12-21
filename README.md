@@ -16,6 +16,7 @@ GH_TOKEN added from github with repo/package permissions
  - internal
  - documentation
 
+Uses these labels on the current branch / PR to determine how to respond to version question
 
 ## Use
 
@@ -32,6 +33,9 @@ GH_TOKEN added from github with repo/package permissions
  - You must not merge two PRs at once or you will botch one of the releases.
  - `nvm version` can be used with the following commands
 		[<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
+		- premajor  increments major but appends `-XX` to the version (e.g. 1.1.X -> 2.0.0-XX)
+		- preminor increments  minor but appends `-XX` to the release version (e.g. 1.1.4 -> 1.2.0-XX)
+		- prepatch/prerelease appends increments/apends `-XX` to current version (e.g. 1.1.0 -> 1.1.0-XX)
 
 ## Skip-Release label
 https://intuit.github.io/auto/pages/quick-merge.html#with-skip-releaseo  

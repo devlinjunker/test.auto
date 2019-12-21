@@ -30,7 +30,8 @@ GH_TOKEN added from github with repo/package permissions
 ## Notes
 
  - You must not merge two PRs at once or you will botch one of the releases.
-
+ - `nvm version` can be used with the following commands
+		[<newversion> | major | minor | patch | premajor | preminor | prepatch | prerelease [--preid=<prerelease-id>] | from-git]
 
 ## Skip-Release label
 https://intuit.github.io/auto/pages/quick-merge.html#with-skip-releaseo  
@@ -38,4 +39,5 @@ https://intuit.github.io/auto/pages/getting-started.html#enabling-skip-release-l
 
  - skip-release label requires setup
  - allows merging multiple PRs quickly as it does not generate a new build/release
+
 
